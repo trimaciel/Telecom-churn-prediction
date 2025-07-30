@@ -1,14 +1,12 @@
-# 📊 Telecom Churn Prediction – Parte 2: Modelos Preditivos
+# 📊 Telecom Churn Prediction
 
-Este repositório contém a segunda parte do projeto **Telecom Churn**, focado no desenvolvimento de modelos preditivos para identificar quais clientes têm maior probabilidade de cancelar seus serviços com uma operadora de telecomunicações.
-
-> 🔁 Este projeto dá continuidade à Parte 1, onde foram realizadas a extração, limpeza e análise exploratória dos dados.
+Projeto criado para desenvolver modelos preditivos capazes de prever quais clientes têm maior chance de cancelar seus serviços em uma operadora de telecomunicações.
 
 ---
 
 ## 🧠 Objetivo
 
-Desenvolver e avaliar modelos de Machine Learning capazes de prever o **churn de clientes**, contribuindo com insights estratégicos para retenção e fidelização de usuários.
+Identificar os principais fatores que levam clientes a cancelarem seus contratos, utilizando dados históricos e algoritmos de machine learning. Com isso, a empresa pode antecipar cancelamentos e adotar ações de retenção.
 
 ---
 
@@ -20,23 +18,28 @@ Desenvolver e avaliar modelos de Machine Learning capazes de prever o **churn de
 - [Modelos Treinados](#modelos-treinados)
 - [Resultados e Insights](#resultados-e-insights)
 - [Recomendações Estratégicas](#recomendações-estratégicas)
-- [Créditos e Continuidade](#créditos-e-continuidade)
+- [Conclusão Final](#conclusão-final)
 - [Licença](#licença)
 
 ---
 
 ## 📝 Descrição do Projeto
 
-Nesta etapa (Parte 2), são realizadas as seguintes ações:
+Este projeto é a **segunda parte** do desafio Telecom X.  
+Aqui, o foco está na **modelagem preditiva de churn**. A primeira parte tratou da extração, tratamento e análise exploratória dos dados.
 
-1. Importação dos dados já tratados (da Parte 1)
-2. Análise de desbalanceamento da variável alvo (churn)
-3. Engenharia de atributos e codificação das variáveis
-4. Preparação dos dados para modelos preditivos
-5. Treinamento e comparação de modelos de classificação
-6. Interpretação dos resultados e geração de recomendações
+### 🔁 Etapas realizadas:
 
-> 🧾 Os dados utilizados são provenientes de um dataset fictício da empresa "Telecom X".
+1. **Carregamento dos dados tratados**
+2. **Remoção de colunas irrelevantes (como IDs e total gasto)**
+3. **Codificação com One-Hot Encoding**
+4. **Balanceamento de classes com SMOTE**
+5. **Normalização dos dados para modelos sensíveis à escala**
+6. **Divisão em treino (70%) e teste (30%)**
+7. **Treinamento de modelos (Logistic Regression, Random Forest, Decision Tree)**
+8. **Avaliação com métricas e curva ROC**
+9. **Análise da importância das variáveis**
+10. **Geração de conclusões e recomendações estratégicas**
 
 ---
 
@@ -53,56 +56,65 @@ Nesta etapa (Parte 2), são realizadas as seguintes ações:
 
 ## 🧪 Como Executar
 
-1. Faça o clone do repositório:
+1. Clone o repositório:
 ```bash
 git clone https://github.com/trimaciel/Telecom-churn-prediction.git
 ```
 
-2. Acesse o notebook no Google Colab:
-   [🔗 Notebook de Modelagem Preditiva](LINK_DO_COLAB)
-
-3. (Opcional) Execute localmente com ambiente virtual:
+2. Instale as dependências:
 ```bash
-pip install -r requirements.txt
+pip install -r requisitos.txt
 ```
+
+3. Execute os notebooks no Google Colab ou localmente:
+   - `telecom_modelagem.ipynb` (modelos e gráficos)
+   - `conclusao_final.md` (relatório analítico final)
 
 ---
 
 ## 🤖 Modelos Treinados
 
-- Regressão Logística
-- Random Forest
-- (Outros serão adicionados conforme evolução)
+- **Regressão Logística**
+- **Árvore de Decisão (max_depth=4)** ✅ modelo escolhido
+- **Random Forest**
 
-Avaliação com:
-- Accuracy
-- F1-Score
+Cada modelo foi avaliado com:
+- Acurácia
+- Precision, Recall, F1-score
 - Matriz de Confusão
-- ROC AUC
+- Curva ROC e AUC
 
 ---
 
 ## 📈 Resultados e Insights
 
-- Contratos mensais estão altamente associados ao churn
-- Clientes sem serviços adicionais (TV, backup, suporte) têm maior risco de evasão
-- Os modelos apresentaram bom desempenho na previsão de clientes com alto risco
+- **Modelo mais equilibrado:** Árvore de Decisão com `max_depth=4`
+- **Acurácia final:** ~75%
+- Variáveis com maior impacto na evasão:
+  - Tipo de contrato (mensal = mais churn)
+  - Forma de pagamento (cheque eletrônico)
+  - Gasto mensal elevado
+  - Pouco tempo de contrato
+  - Ausência de suporte técnico e segurança online
 
 ---
 
-## 🧭 Recomendações Estratégicas
+## 🎯 Recomendações Estratégicas
 
-- Aumentar a fidelização com planos anuais ou pacotes com serviços combinados
-- Investir em suporte técnico e segurança como diferenciais
-- Realizar campanhas direcionadas para clientes em risco com benefícios personalizados
+- Oferecer **benefícios para contratos longos** (anual/bienal)
+- Incentivar o uso de **pagamento automático**
+- **Monitorar clientes com menor tenure** (tempo de contrato)
+- Promover serviços de **segurança online e suporte técnico**
+- Ações de retenção para usuários de **fibra óptica com churn elevado**
 
 ---
 
-## 🔗 Créditos e Continuidade
+## 📄 Conclusão Final
 
-Este repositório é a **Parte 2** do projeto **Telecom Churn**.  
-A Parte 1 (extração e EDA) está disponível em:  
-[🔗 TelecomX - Parte 1 (Análise Exploratória)](LINK_DA_PARTE_1_SE_EXISTIR)
+Para mais detalhes sobre os insights, métricas dos modelos e recomendações, veja o arquivo:
+
+📄 [conclusao_final.md](conclusao_final.md)
+
 
 ---
 
@@ -112,9 +124,4 @@ A Parte 1 (extração e EDA) está disponível em:
 |-------------------------------------------|
 | Analista de Dados & Cientista em formação |
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
