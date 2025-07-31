@@ -125,3 +125,9 @@ Para mais detalhes sobre os insights, métricas dos modelos e recomendações, v
 | Analista de Dados & Cientista em formação |
 
 
+🍀 **Tri Maciel**  
+📫 (trimaciel@hotmail.com / (https://www.linkedin.com/in/patriciammaciel/))  
+✨ *Em frente!* 
+
+
+
