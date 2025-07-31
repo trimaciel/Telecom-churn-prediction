@@ -118,15 +118,22 @@ Para mais detalhes sobre os insights, métricas dos modelos e recomendações, v
 
 ---
 
-## 👩‍💻 Desenvolvedora
+## 👨‍💻 Desenvolvedora do Projeto
 
-| [@trimaciel](https://github.com/trimaciel) |
-|-------------------------------------------|
-| Analista de Dados & Cientista em formação |
+| [<img src="https://avatars.githubusercontent.com/trimaciel" width=75><br><sub>@trimaciel</sub>](https://github.com/trimaciel) |
+|:--:|
 
+
+---
+
+🧠 Projeto desenvolvido como parte de um estudo de análise de dados com foco em **retenção de clientes** e uso de Python para **tomada de decisão baseada em dados (Data-Driven)**.
 
 🍀 **Tri Maciel**  
-📫 (trimaciel@hotmail.com / (https://www.linkedin.com/in/patriciammaciel/))  
+
+📫 trimaciel@hotmail.com 
+
+🔗 https://www.linkedin.com/in/patriciammaciel
+
 ✨ *Em frente!* 
 
 
