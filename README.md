@@ -126,7 +126,6 @@ Para mais detalhes sobre os insights, métricas dos modelos e recomendações, v
 
 ---
 
-🧠 Projeto desenvolvido como parte de um estudo de análise de dados com foco em **retenção de clientes** e uso de Python para **tomada de decisão baseada em dados (Data-Driven)**.
 
 🍀 **Tri Maciel**  
 
